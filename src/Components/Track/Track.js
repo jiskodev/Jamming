@@ -32,8 +32,9 @@ class Track extends React.Component {
                     <h3>{this.props.track.name}</h3>
                     <p>{this.props.track.artist} | {this.props.track.album}</p>
                 </div>
+                <audio controls><source src={this.props.track.preview_url} /></audio>
                 {this.renderAction()}
-                <audio controls><source src="https://p.scdn.co/mp3-preview/500508f8e0224fab452592940cde96fdd7a1059b?cid=7e5b68aea4a8449b80adf14e02d21842" /></audio>
+                
             </div>
         )
     }
